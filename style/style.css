@@ -52,3 +52,16 @@ h1{
 .btn{
     display: none;
 }
+
+
+@media screen and (max-width: 600px){
+.container{
+    width: 600px;
+    margin: 50% auto;
+}
+h1{
+    font-size: 3rem;
+}
+
+}
+    
