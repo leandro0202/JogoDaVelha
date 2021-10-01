@@ -57,10 +57,22 @@ h1{
 @media screen and (max-width: 600px){
 .container{
     width: 600px;
-    margin: 50% auto;
+    height: 500px;
+    margin: 0px auto;
+    justify-content: flex-start;
 }
 h1{
     font-size: 3rem;
+}
+.casa{
+    width: 70px;
+    height: 70px;
+}
+.placar{
+    font-size: 1rem;
+}
+p{
+font-size: 2rem;
 }
 
 }
