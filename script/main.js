@@ -13,91 +13,91 @@ let pontuação1 = 0
 let pontuação2 = 0
 
 
-function jogada(){  
+function jogada() {
     for (let i = 0; i < casas.length; i++) {
         casas[i].addEventListener('click', () => {
-            if(clique % 2 == 0){
-                if (casas[i].classList.contains('jogada')){
+            if (clique % 2 == 0) {
+                if (casas[i].classList.contains('jogada')) {
                     res.textContent = 'escolha outra casa'
-                    clique +=1
-                }else {
+                    clique += 1
+                } else {
                     res.textContent = ''
                     casas[i].textContent = jogador1
                     casas[i].classList.add('jogada')
                     arrayJogador1.push(i)
-                    if(arrayJogador1.includes(0) && arrayJogador1.includes(3) && arrayJogador1.includes(6)){
+                    if (arrayJogador1.includes(0) && arrayJogador1.includes(3) && arrayJogador1.includes(6)) {
                         res.textContent = 'jogador 1 venceu'
                         newGame()
                         pontoJ1()
-                    }else if(arrayJogador1.includes(0) && arrayJogador1.includes(1) && arrayJogador1.includes(2)){
+                    } else if (arrayJogador1.includes(0) && arrayJogador1.includes(1) && arrayJogador1.includes(2)) {
                         res.textContent = 'jogador 1 venceu'
                         newGame()
                         pontoJ1()
-                    }else if(arrayJogador1.includes(0) && arrayJogador1.includes(4) && arrayJogador1.includes(8)){
+                    } else if (arrayJogador1.includes(0) && arrayJogador1.includes(4) && arrayJogador1.includes(8)) {
                         res.textContent = 'jogador 1 venceu'
                         newGame()
                         pontoJ1()
-                    }else if(arrayJogador1.includes(2) && arrayJogador1.includes(4) && arrayJogador1.includes(6)){
+                    } else if (arrayJogador1.includes(2) && arrayJogador1.includes(4) && arrayJogador1.includes(6)) {
                         res.textContent = 'jogador 1 venceu'
                         newGame()
                         pontoJ1()
-                    }else if(arrayJogador1.includes(6) && arrayJogador1.includes(7) && arrayJogador1.includes(8)){
+                    } else if (arrayJogador1.includes(6) && arrayJogador1.includes(7) && arrayJogador1.includes(8)) {
                         res.textContent = 'jogador 1 venceu'
                         newGame()
                         pontoJ1()
-                    }else if(arrayJogador1.includes(2) && arrayJogador1.includes(5) && arrayJogador1.includes(8)){
+                    } else if (arrayJogador1.includes(2) && arrayJogador1.includes(5) && arrayJogador1.includes(8)) {
                         res.textContent = 'jogador 1 venceu'
                         newGame()
                         pontoJ1()
-                    }else if(arrayJogador1.includes(1) && arrayJogador1.includes(4) && arrayJogador1.includes(7)){
+                    } else if (arrayJogador1.includes(1) && arrayJogador1.includes(4) && arrayJogador1.includes(7)) {
                         res.textContent = 'jogador 1 venceu'
                         newGame()
                         pontoJ1()
-                    }else if(arrayJogador1.includes(3) && arrayJogador1.includes(4) && arrayJogador1.includes(5)){
+                    } else if (arrayJogador1.includes(3) && arrayJogador1.includes(4) && arrayJogador1.includes(5)) {
                         res.textContent = 'jogador 1 venceu'
                         newGame()
                         pontoJ1()
                     }
                 }
 
-            }else{
-                if (casas[i].classList.contains('jogada')){
+            } else {
+                if (casas[i].classList.contains('jogada')) {
                     res.textContent = 'escolha outra casa'
-                    clique +=1
-                }else{
+                    clique += 1
+                } else {
                     res.textContent = ''
                     casas[i].textContent = jogador2
                     casas[i].classList.add('jogada')
                     arrayJogador2.push(i)
-                    if(arrayJogador2.includes(0) && arrayJogador2.includes(3) && arrayJogador2.includes(6)){
+                    if (arrayJogador2.includes(0) && arrayJogador2.includes(3) && arrayJogador2.includes(6)) {
                         res.textContent = 'jogador 2 venceu'
                         newGame()
                         pontoJ2()
-                    }else if(arrayJogador2.includes(0) && arrayJogador2.includes(1) && arrayJogador2.includes(2)){
+                    } else if (arrayJogador2.includes(0) && arrayJogador2.includes(1) && arrayJogador2.includes(2)) {
                         res.textContent = 'jogador 2 venceu'
                         newGame()
                         pontoJ2()
-                    }else if(arrayJogador2.includes(0) && arrayJogador2.includes(4) && arrayJogador2.includes(8)){
+                    } else if (arrayJogador2.includes(0) && arrayJogador2.includes(4) && arrayJogador2.includes(8)) {
                         res.textContent = 'jogador 2 venceu'
                         newGame()
                         pontoJ2()
-                    }else if(arrayJogador2.includes(2) && arrayJogador2.includes(4) && arrayJogador2.includes(6)){
+                    } else if (arrayJogador2.includes(2) && arrayJogador2.includes(4) && arrayJogador2.includes(6)) {
                         res.textContent = 'jogador 2 venceu'
                         newGame()
                         pontoJ2()
-                    }else if(arrayJogador2.includes(6) && arrayJogador2.includes(7) && arrayJogador2.includes(8)){
+                    } else if (arrayJogador2.includes(6) && arrayJogador2.includes(7) && arrayJogador2.includes(8)) {
                         res.textContent = 'jogador 2 venceu'
                         newGame()
                         pontoJ2()
-                    }else if(arrayJogador2.includes(2) && arrayJogador2.includes(5) && arrayJogador2.includes(8)){
+                    } else if (arrayJogador2.includes(2) && arrayJogador2.includes(5) && arrayJogador2.includes(8)) {
                         res.textContent = 'jogador 2 venceu'
                         newGame()
                         pontoJ2()
-                    }else if(arrayJogador2.includes(1) && arrayJogador2.includes(4) && arrayJogador2.includes(7)){
+                    } else if (arrayJogador2.includes(1) && arrayJogador2.includes(4) && arrayJogador2.includes(7)) {
                         res.textContent = 'jogador 2 venceu'
                         newGame()
                         pontoJ2()
-                    }else if(arrayJogador2.includes(3) && arrayJogador2.includes(4) && arrayJogador2.includes(5)){
+                    } else if (arrayJogador2.includes(3) && arrayJogador2.includes(4) && arrayJogador2.includes(5)) {
                         res.textContent = 'jogador 2 venceu'
                         newGame()
                         pontoJ2()
@@ -110,34 +110,36 @@ function jogada(){
     }
 }
 
-function newGame(){
-    btn.style.display = 'block'
-    btn.onclick = () =>{
-        for (let i = 0; i < casas.length; i++) {
+function newGame() {
+    for (let i = 0; i < casas.length; i++) {
+        setTimeout(() => {
             casas[i].textContent = ''
             res.textContent = ''
             casas[i].classList.remove('jogada')
             arrayJogador2 = []
             arrayJogador1 = []
             clique = 0
-            btn.style.display = 'none'
-        
-        }
+        }, 1000)
+
     }
-    
 }
-function tied(){
-    if(arrayJogador1.length === 5 || arrayJogador2.length === 5){
-        res.textContent = 'empatou'
-        newGame()
+function tied() {
+    if (arrayJogador1.length === 5 || arrayJogador2.length === 5) {
+        if(res.value === ''){
+            res.textContent = 'empatou'
+            newGame()
+        }else{
+            newGame()
+        }
+        
     }
 }
 
-function pontoJ1(){
+function pontoJ1() {
     pontuação1 += 1
     jog1.textContent = pontuação1
 }
-function pontoJ2(){
+function pontoJ2() {
     pontuação2 += 1
     jog2.textContent = pontuação2
 }
